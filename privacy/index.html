@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DraftMatic</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --white: #f5f5f0;
+    --accent: #ff3c3c;
+    --muted: #888;
+    --border: #1e1e1e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    color: var(--white);
+  }
+  .logo span { color: var(--accent); }
+  .back {
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .back:hover { color: var(--white); }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 48px 120px;
+  }
+  .page-label {
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 64px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .highlight-box {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 20px 24px;
+    margin-bottom: 48px;
+    background: #0f0f0f;
+  }
+  .highlight-box p { margin: 0; color: #aaa; font-size: 13px; }
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 52px 0 16px;
+  }
+  p { color: #bbb; margin-bottom: 16px; }
+  ul { color: #bbb; padding-left: 20px; margin-bottom: 16px; }
+  ul li { margin-bottom: 8px; }
+  strong { color: var(--white); font-weight: 500; }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 48px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 11px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (max-width: 768px) {
+    header { padding: 20px 24px; }
+    main { padding: 60px 24px 80px; }
+    h1 { font-size: 36px; letter-spacing: -1px; }
+    footer { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="../" class="logo">Draft<span>Matic</span></a>
+  <a href="../" class="back">← Back</a>
+</header>
+
+<main>
+  <div class="page-label">Legal / 02</div>
+  <h1>Privacy<br>Policy</h1>
+  <div class="meta">Last updated: May 2025 &nbsp;·&nbsp; Effective immediately upon use</div>
+
+  <div class="highlight-box">
+    <p>DraftMatic is committed to protecting your privacy. We collect only what is necessary to operate the Service and never sell your data to third parties.</p>
+  </div>
+
+  <h2>1.0 — Information We Collect</h2>
+  <p>When you use DraftMatic, we may collect the following information:</p>
+  <ul>
+    <li><strong>Telegram User ID</strong> — to identify and authenticate your account within the bot</li>
+    <li><strong>TikTok OAuth Token</strong> — to authenticate API requests on your behalf (stored securely, encrypted)</li>
+    <li><strong>License Key</strong> — to verify your subscription status</li>
+    <li><strong>Video files and captions</strong> — temporarily processed to upload to TikTok, not stored permanently</li>
+    <li><strong>Usage data</strong> — number of uploads, timestamps, for service monitoring purposes</li>
+  </ul>
+
+  <h2>2.0 — How We Use Your Information</h2>
+  <p>We use the collected information solely to:</p>
+  <ul>
+    <li>Authenticate you and provide access to the Service</li>
+    <li>Upload your videos to TikTok via the official API on your behalf</li>
+    <li>Verify your license key and subscription status</li>
+    <li>Monitor service performance and fix technical issues</li>
+    <li>Send service-related notifications via Telegram bot</li>
+  </ul>
+
+  <h2>3.0 — Data Storage & Security</h2>
+  <p>Your data is stored securely on our servers hosted on Railway. We implement industry-standard security measures including:</p>
+  <ul>
+    <li>Encrypted storage of all OAuth tokens</li>
+    <li>Secure HTTPS connections for all API communications</li>
+    <li>No permanent storage of video files — deleted after successful TikTok upload</li>
+    <li>Access to user data is restricted to authorized systems only</li>
+  </ul>
+
+  <h2>4.0 — Third-Party Services</h2>
+  <p>DraftMatic integrates with the following third-party services:</p>
+  <ul>
+    <li><strong>TikTok API</strong> — for video uploading. Subject to TikTok's Privacy Policy.</li>
+    <li><strong>Telegram</strong> — as the user interface. Subject to Telegram's Privacy Policy.</li>
+    <li><strong>Railway</strong> — for server hosting. Subject to Railway's Privacy Policy.</li>
+  </ul>
+  <p>We do not share your personal data with any other third parties.</p>
+
+  <h2>5.0 — TikTok Data Access</h2>
+  <p>DraftMatic accesses your TikTok account only with your explicit permission via TikTok's OAuth flow. We request only the minimum permissions necessary:</p>
+  <ul>
+    <li><strong>video.upload</strong> — to upload videos to your account</li>
+    <li><strong>video.publish</strong> — to create draft posts</li>
+  </ul>
+  <p>You may revoke DraftMatic's access at any time through TikTok's app settings under Security & Login → Apps that have access to your account.</p>
+
+  <h2>6.0 — Data Retention</h2>
+  <ul>
+    <li>Video files: deleted immediately after successful TikTok upload</li>
+    <li>OAuth tokens: retained until you revoke access or cancel subscription</li>
+    <li>Usage logs: retained for 90 days for debugging purposes</li>
+    <li>Account data: deleted within 30 days of cancellation upon request</li>
+  </ul>
+
+  <h2>7.0 — Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li>Request access to the personal data we hold about you</li>
+    <li>Request deletion of your data at any time</li>
+    <li>Revoke TikTok access permissions at any time</li>
+    <li>Opt out of any non-essential communications</li>
+  </ul>
+
+  <h2>8.0 — Children's Privacy</h2>
+  <p>DraftMatic is not intended for users under the age of 18. We do not knowingly collect data from minors. If you believe a minor has used our Service, please contact us immediately.</p>
+
+  <h2>9.0 — Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify users of any significant changes via the Telegram bot. Continued use of the Service after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>10.0 — Contact</h2>
+  <p>For any privacy-related questions or data deletion requests, please contact us via Telegram through our official bot channel.</p>
+</main>
+
+<footer>
+  &copy; 2025 DraftMatic. All rights reserved. &nbsp;·&nbsp; <a href="../terms/">Terms of Service</a>
+</footer>
+
+</body>
+</html>
