@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DraftMatic — Bulk TikTok Draft Uploader</title>
+<title>Terms of Service — DraftMatic</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -18,8 +18,9 @@
     background: var(--black);
     color: var(--white);
     font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    line-height: 1.8;
     min-height: 100vh;
-    overflow-x: hidden;
   }
   header {
     border-bottom: 1px solid var(--border);
@@ -33,235 +34,135 @@
     font-weight: 800;
     font-size: 22px;
     letter-spacing: -0.5px;
+    text-decoration: none;
+    color: var(--white);
   }
   .logo span { color: var(--accent); }
-  nav a {
+  .back {
+    font-size: 12px;
     color: var(--muted);
     text-decoration: none;
-    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-left: 32px;
     transition: color 0.2s;
   }
-  nav a:hover { color: var(--white); }
-
-  /* Hero */
-  .hero {
-    max-width: 900px;
+  .back:hover { color: var(--white); }
+  main {
+    max-width: 720px;
     margin: 0 auto;
-    padding: 120px 48px 80px;
+    padding: 80px 48px 120px;
   }
-  .hero-tag {
-    display: inline-block;
+  .page-label {
     font-size: 11px;
     color: var(--accent);
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    border: 1px solid var(--accent);
-    padding: 4px 12px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
   h1 {
     font-family: 'Syne', sans-serif;
-    font-size: clamp(48px, 8vw, 88px);
+    font-size: 52px;
     font-weight: 800;
-    line-height: 1.0;
-    letter-spacing: -3px;
-    margin-bottom: 32px;
-  }
-  h1 em {
-    font-style: normal;
-    color: var(--accent);
-  }
-  .hero-desc {
-    font-size: 14px;
-    color: #999;
-    max-width: 480px;
-    line-height: 1.8;
-    margin-bottom: 48px;
-  }
-  .hero-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--accent);
-    color: var(--white);
-    padding: 14px 28px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: opacity 0.2s;
-  }
-  .hero-cta:hover { opacity: 0.85; }
-
-  /* Features */
-  .features {
-    border-top: 1px solid var(--border);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 900px;
-    margin: 0 auto 0;
-  }
-  .feature {
-    padding: 48px;
-    border-right: 1px solid var(--border);
-  }
-  .feature:last-child { border-right: none; }
-  .feature-num {
-    font-size: 11px;
-    color: var(--accent);
-    letter-spacing: 0.15em;
-    margin-bottom: 20px;
-  }
-  .feature h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -2px;
     margin-bottom: 12px;
   }
-  .feature p {
+  .meta {
+    color: var(--muted);
     font-size: 12px;
-    color: var(--muted);
-    line-height: 1.8;
+    margin-bottom: 64px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
   }
-
-  /* Legal links */
-  .legal-section {
-    border-top: 1px solid var(--border);
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 64px 48px;
-  }
-  .legal-section h2 {
+  h2 {
     font-family: 'Syne', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 32px;
-  }
-  .legal-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  .legal-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid var(--border);
-    padding: 24px 28px;
-    text-decoration: none;
-    color: var(--white);
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .legal-link:hover {
-    border-color: var(--accent);
-    background: #111;
-  }
-  .legal-link-title {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    margin-bottom: 4px;
-  }
-  .legal-link-sub {
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-  }
-  .legal-link-arrow {
-    font-size: 20px;
     color: var(--accent);
+    margin: 52px 0 16px;
   }
-
+  p { color: #bbb; margin-bottom: 16px; }
+  ul { color: #bbb; padding-left: 20px; margin-bottom: 16px; }
+  ul li { margin-bottom: 8px; }
   footer {
     border-top: 1px solid var(--border);
     padding: 28px 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 11px;
+    text-align: center;
     color: var(--muted);
+    font-size: 11px;
   }
-
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
   @media (max-width: 768px) {
     header { padding: 20px 24px; }
-    .hero { padding: 80px 24px 60px; }
-    h1 { letter-spacing: -2px; }
-    .features { grid-template-columns: 1fr; }
-    .feature { border-right: none; border-bottom: 1px solid var(--border); }
-    .legal-section { padding: 48px 24px; }
-    .legal-links { grid-template-columns: 1fr; }
-    footer { padding: 24px; flex-direction: column; gap: 8px; text-align: center; }
+    main { padding: 60px 24px 80px; }
+    h1 { font-size: 36px; letter-spacing: -1px; }
+    footer { padding: 24px; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">Draft<span>Matic</span></div>
-  <nav>
-    <a href="terms/">Terms</a>
-    <a href="privacy/">Privacy</a>
-  </nav>
+  <a href="../" class="logo">Draft<span>Matic</span></a>
+  <a href="../" class="back">← Back</a>
 </header>
 
-<section class="hero">
-  <div class="hero-tag">TikTok Affiliate Tool</div>
-  <h1>Bulk Draft.<br><em>Zero</em> Hassle.</h1>
-  <p class="hero-desc">DraftMatic automates your TikTok affiliate video uploads via Telegram. Send videos to the bot — drafts appear in your TikTok app, ready to tag and post.</p>
-  <a href="https://t.me/YOUR_BOT_USERNAME" class="hero-cta">
-    Start on Telegram →
-  </a>
-</section>
+<main>
+  <div class="page-label">Legal / 01</div>
+  <h1>Terms of<br>Service</h1>
+  <div class="meta">Last updated: May 2025 &nbsp;·&nbsp; Effective immediately upon use</div>
 
-<div class="features">
-  <div class="feature">
-    <div class="feature-num">01</div>
-    <h3>Bulk Upload</h3>
-    <p>Send multiple videos at once. Bot processes all of them into TikTok drafts automatically.</p>
-  </div>
-  <div class="feature">
-    <div class="feature-num">02</div>
-    <h3>Auto Caption</h3>
-    <p>Set your affiliate link and caption once. Bot applies it to every draft you create.</p>
-  </div>
-  <div class="feature">
-    <div class="feature-num">03</div>
-    <h3>License Protected</h3>
-    <p>Access requires a valid license key. Secure, individual access for every creator.</p>
-  </div>
-</div>
+  <h2>1.0 — Acceptance of Terms</h2>
+  <p>By accessing or using DraftMatic ("the Service"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Service.</p>
 
-<div class="legal-section">
-  <h2>Legal Documents</h2>
-  <div class="legal-links">
-    <a href="terms/" class="legal-link">
-      <div>
-        <div class="legal-link-title">Terms of Service</div>
-        <div class="legal-link-sub">Rules of use & your obligations</div>
-      </div>
-      <div class="legal-link-arrow">→</div>
-    </a>
-    <a href="privacy/" class="legal-link">
-      <div>
-        <div class="legal-link-title">Privacy Policy</div>
-        <div class="legal-link-sub">How we handle your data</div>
-      </div>
-      <div class="legal-link-arrow">→</div>
-    </a>
-  </div>
-</div>
+  <h2>2.0 — Description of Service</h2>
+  <p>DraftMatic is a Telegram-based automation tool that allows TikTok affiliate content creators to upload videos as drafts to their TikTok accounts. The Service integrates with TikTok's official Content Posting API.</p>
+
+  <h2>3.0 — Eligibility</h2>
+  <p>You must be at least 18 years of age to use this Service. By using DraftMatic, you represent and warrant that you meet this requirement and have the legal capacity to enter into these Terms.</p>
+
+  <h2>4.0 — License Keys & Access</h2>
+  <ul>
+    <li>Access to DraftMatic requires a valid license key purchased from the Service.</li>
+    <li>License keys are non-transferable and for single-user use only.</li>
+    <li>You are responsible for maintaining the confidentiality of your license key.</li>
+    <li>DraftMatic reserves the right to revoke keys found to be shared or abused.</li>
+  </ul>
+
+  <h2>5.0 — TikTok Platform Compliance</h2>
+  <p>Users of DraftMatic agree to comply with TikTok's Terms of Service and Community Guidelines. DraftMatic operates exclusively through TikTok's official API and does not engage in any activity that violates TikTok's platform policies. You are solely responsible for the content you upload through the Service.</p>
+
+  <h2>6.0 — Prohibited Uses</h2>
+  <p>You agree not to use DraftMatic to:</p>
+  <ul>
+    <li>Upload content that violates TikTok's Community Guidelines</li>
+    <li>Distribute spam, misleading, or fraudulent content</li>
+    <li>Infringe on any third-party intellectual property rights</li>
+    <li>Attempt to reverse-engineer or exploit the Service</li>
+    <li>Share or resell your license key to other parties</li>
+  </ul>
+
+  <h2>7.0 — Payments & Refunds</h2>
+  <p>All purchases are final. DraftMatic does not offer refunds once a license key has been issued and activated. In cases of technical failure attributable to DraftMatic, we will extend your subscription period accordingly.</p>
+
+  <h2>8.0 — Disclaimer of Warranties</h2>
+  <p>DraftMatic is provided "as is" without warranty of any kind. We do not guarantee uninterrupted service, particularly as availability depends on TikTok's API uptime and policies, which are outside our control.</p>
+
+  <h2>9.0 — Limitation of Liability</h2>
+  <p>DraftMatic shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Service, including but not limited to lost revenue, data loss, or TikTok account actions.</p>
+
+  <h2>10.0 — Changes to Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. Continued use of the Service after changes constitutes acceptance of the new Terms. We will notify users of significant changes via the Telegram bot.</p>
+
+  <h2>11.0 — Contact</h2>
+  <p>For questions regarding these Terms, please contact us via Telegram through our official bot channel.</p>
+</main>
 
 <footer>
-  <span>&copy; 2025 DraftMatic. All rights reserved.</span>
-  <span>Built for TikTok affiliate creators.</span>
+  &copy; 2025 DraftMatic. All rights reserved. &nbsp;·&nbsp; <a href="../privacy/">Privacy Policy</a>
 </footer>
 
 </body>
